@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nav-wrapper {
   background: linear-gradient(
     90deg,
@@ -6,3 +7,15 @@
     rgb(255, 255, 255) 100%
   );
 }
+=======
+span {
+    color:black;
+}
+
+h2 {
+   font-size: large; 
+}
+.btn-large {
+    background-color: orange;
+}
+>>>>>>> b0ef5708c8ee3c63cd516678534b92c40acb3c4a
