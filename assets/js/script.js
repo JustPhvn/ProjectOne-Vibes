@@ -73,13 +73,18 @@ $("#submit").on("click", function() {
   // first add then if
   var sum = 0;
 
+  //hide element
+  $("#quest").attr("style", "display: none");
+
   $(".radio:checked").each(function() {
     sum += +this.value;
   });
   console.log(sum);
   if (sum > 1) {
     // // run kanye
+    kanyeQuote();
   } else {
     // run trump
+    trumpQuote();
   }
 });
