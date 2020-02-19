@@ -6,7 +6,7 @@ As a person whose mood is constantly changing, I want to see if I'm more Donald 
 
 ## Project Description
 
-User will fill out a moood questionnaire that will randomly generate an image and quote of Kanye or Donald. The image will be accompanied by a Kanye song.
+User will fill out a moood questionnaire that will randomly generate a gif and quote of Kanye or Donald. The gif will be accompanied by a Kanye song.
 
 
 ## Flow Diagram & Wireframe
