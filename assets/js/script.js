@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function kanyeSong() {
   var albumsURL =
     "https://theaudiodb.com/api/v1/json/1/searchalbum.php?s=Kanye_West&s=Kanye_West";
@@ -69,25 +68,18 @@ function giphy() {
     console.log(gif);
   });
 }
-=======
 
-$("#submit").on("click", function(){
+$("#submit").on("click", function() {
+  // first add then if
+  var sum = 0;
 
-// first add then if
-    var sum = 0;
-
-    $(".radio:checked").each(function(){ 
-        sum += +this.value;
-    
+  $(".radio:checked").each(function() {
+    sum += +this.value;
+  });
+  console.log(sum);
+  if (sum > 1) {
+    // // run kanye
+  } else {
+    // run trump
+  }
 });
-console.log(sum);
-    if (sum > 1 ) {
-       
-   // // run kanye 
-    }
-    else {
-         // run trump
-    }
-    
-});
->>>>>>> b0ef5708c8ee3c63cd516678534b92c40acb3c4a
