@@ -1,0 +1,8 @@
+.nav-wrapper {
+  background: linear-gradient(
+    90deg,
+    rgb(243, 176, 20) 0%,
+    rgb(84, 178, 255) 50%,
+    rgb(255, 255, 255) 100%
+  );
+}
