@@ -105,8 +105,16 @@ $("#submit").on("click", function() {
   }
 });
 
-$("#enter").on("click", function(){
+$("#enter").on("click", function() {
   $("#welcome").attr("style", "display:none");
   $("#quest").attr("style", "display:block");
   document.body.style.backgroundColor = "rgb(248, 248, 175)";
-})
+});
+
+$("#restart").on("click", function() {
+  $("#quest").attr("style", "display: block");
+  $("#result").attr("style", "display: none");
+  for (let i = 0; i < 10; i++) {
+    document.getElementsByName("buttons")[i].checked = false;
+  }
+});
