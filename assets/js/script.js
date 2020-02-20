@@ -85,6 +85,7 @@ function giphy() {
 }
 
 $("#submit").on("click", function() {
+  $(window).scrollTop(0);
   for (let i = 0; i < 10; i++) {
     if (document.getElementsByName("buttons")[i].checked === true) {
       console.log(answers);
@@ -127,7 +128,9 @@ $("#enter").on("click", function() {
 $("#restart").on("click", function() {
   // console.log($("#welcome").attr("style"));
   if ($("#welcome").attr("style") === "display: none") {
-    $("#quest").attr("style", "display: block");
+    document.body.style.backgroundColor = "black";
+    $("#welcome").attr("style", "display: block");
+    $("#quest").attr("style", "display: none");
     $("#result").attr("style", "display: none");
     for (let i = 0; i < 10; i++) {
       document.getElementsByName("buttons")[i].checked = false;
