@@ -34,7 +34,9 @@ function kanyeSong() {
         console.log(response.items[0].id.videoId);
         $("#video").attr(
           "src",
-          "https://www.youtube.com/embed/" + response.items[0].id.videoId
+          "https://www.youtube.com/embed/" +
+            response.items[0].id.videoId +
+            "?&autoplay=1"
         );
       });
     });
