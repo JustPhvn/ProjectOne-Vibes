@@ -12,12 +12,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container" style="display: block;" id="quest">
+    
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="btn waves-effect waves-yellow" id="restart">Mood</a></li>
+        </ul>
+      </div>
+    </nav>
+          
+    <div class="container">
       <div class="row" align="center">
-        <h1>How are YOU feeling?</h1>
+        <h1>How Are YOU feeling?</h1>
+
       </div>
       <div class="row">
         <h2>Are you living in 3020 or 2020?</h2>
@@ -160,7 +171,7 @@
       </div>
 
       <div class="row" align="center">
-        <a class="btn-large" id="submit">Submit</a>
+        <a class="btn waves-effect waves-yellow" id="submit">Submit</a>
       </div>
     </div>
 
