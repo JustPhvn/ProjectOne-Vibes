@@ -18,3 +18,7 @@ console.log(sum);
     }
     
 });
+
+4("#restart").on("click", function(){
+    $("#quest").attr("style", "display: block");
+});
