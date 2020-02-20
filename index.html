@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vibes</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -15,8 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
-
   <body>
     
     <nav>
@@ -37,32 +35,51 @@
         <form action="#">
           <p>
             <label>
-              <input name="group1" type="radio" class="button1 radio" value="1"/>
+              <input
+                name="group1"
+                type="radio"
+                class="button1 radio"
+                value="1"
+              />
               <span>Yes, 3020</span>
             </label>
           </p>
           <p>
             <label>
-              <input name="group1" type="radio"  class="button2 radio" value="-1"/>
+              <input
+                name="group1"
+                type="radio"
+                class="button2 radio"
+                value="-1"
+              />
               <span>No, I'm stuck in the past</span>
             </label>
           </p>
         </form>
       </div>
 
-
       <div class="row">
         <h2>Are you feeling down in the trumps?</h2>
         <form action="#">
           <p>
             <label>
-              <input name="group2" type="radio" class="button1 radio" value="1"/>
+              <input
+                name="group2"
+                type="radio"
+                class="button1 radio"
+                value="1"
+              />
               <span>Yes, down in the trumps</span>
             </label>
           </p>
           <p>
             <label>
-              <input name="group2" type="radio" class="button2 radio" value="-1"/>
+              <input
+                name="group2"
+                type="radio"
+                class="button2 radio"
+                value="-1"
+              />
               <span>No</span>
             </label>
           </p>
@@ -74,13 +91,23 @@
         <form action="#">
           <p>
             <label>
-              <input name="group3" type="radio" class="button1 radio" value="1"/>
+              <input
+                name="group3"
+                type="radio"
+                class="button1 radio"
+                value="1"
+              />
               <span>Yes, ready for a Kanye quest</span>
             </label>
           </p>
           <p>
             <label>
-              <input name="group3" type="radio" class="button2 radio" value="-1"/>
+              <input
+                name="group3"
+                type="radio"
+                class="button2 radio"
+                value="-1"
+              />
               <span>No, my life is a Kanye mess</span>
             </label>
           </p>
@@ -92,13 +119,23 @@
         <form action="#">
           <p>
             <label>
-              <input name="group4" type="radio"  class="button1 radio" value="1"/>
+              <input
+                name="group4"
+                type="radio"
+                class="button1 radio"
+                value="1"
+              />
               <span>Yes, mmhmmm</span>
             </label>
           </p>
           <p>
             <label>
-              <input name="group4" type="radio"  class="button2 radio" value="-1"/>
+              <input
+                name="group4"
+                type="radio"
+                class="button2 radio"
+                value="-1"
+              />
               <span>No</span>
             </label>
           </p>
@@ -110,13 +147,23 @@
         <form action="#">
           <p>
             <label>
-              <input name="group5" type="radio"  class="button1 radio" value="1" />
+              <input
+                name="group5"
+                type="radio"
+                class="button1 radio"
+                value="1"
+              />
               <span>All of the lights</span>
             </label>
           </p>
           <p>
             <label>
-              <input name="group5" type="radio"  class="button2 radio" value="-1"/>
+              <input
+                name="group5"
+                type="radio"
+                class="button2 radio"
+                value="-1"
+              />
               <span>No, no get those lights off of me</span>
             </label>
           </p>
@@ -127,6 +174,54 @@
         <a class="btn waves-effect waves-yellow" id="submit">Submit</a>
       </div>
     </div>
+
+    ​
+    <div class="container" style="display: none;" id="result">
+      <div class="row valign-wrapper">
+        <div class="col s6">
+          <img width="100%" src="" alt="" class="gif" />
+        </div>
+        <!-- End col -->
+        ​
+
+        <div class="col s6"><h1 id="quote"></h1></div>
+        <!-- End 2nd col -->
+        ​
+        <!-- <div class="col s4">
+          <img
+            max-width:
+            50%;
+            max-height:
+            50%;
+            src="https://media.giphy.com/media/LKqDgLlK6SuIM/giphy.gif"
+            alt=""
+            class="gif"
+          />
+        </div> -->
+        ​
+      </div>
+      <!-- End row 1 -->
+      <div class="row">
+        <div class="col s12">
+          <div class="video-container" align="center">
+            <iframe
+              width="1280"
+              height="720"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              allow="encrypted-media"
+              id="video"
+            ></iframe>
+          </div>
+          <!-- End of vid container -->
+        </div>
+        <!-- End of 3rd col -->
+      </div>
+      <!-- End of row 2 -->
+    </div>
+    <!-- End of container-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script
