@@ -1,10 +1,54 @@
+h1 {
+   font-size: 40px;
+   color: black;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 600;
+   font-size: 25px; 
+}
+body {
+    background-color: rgb(248, 248, 175);
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+}
 span {
     color:black;
+    font-family: 'Courier New', Courier, monospace; 
+    /* font-weight: bold; */
+    
 }
 
 h2 {
-   font-size: large; 
+   font-size: large;
+   color: black;
+   font-family: 'Courier New', Courier, monospace; 
+   font-weight: bold;
+   
+  
 }
-.btn-large {
-    background-color: orange;
+.btn {
+    background-color: rgb(0, 0, 0);
 }
+.adjust {
+    text-align: right;
+}
+
+/* body:before, body:after {
+    content: "";
+    position: fixed;
+    background: orange;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 20px solid orange;
+    border-right: 20px solid orange;  
+} */
