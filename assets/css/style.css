@@ -1,25 +1,5 @@
-.song-title { 
-    text-align: center;
-    font-size: 30px;
-    
-    }
-    
-    .imggroup{
-        margin-top: 35px;
-        margin-bottom: 35px;
-        margin-right: 200px;
-        margin-left: 200px;
-    border-radius: 200px;
-    
-    }
-    
-    .quote-text{
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        margin-left: 45px;
-            }
-           .row {
+
+           #welcome {
                background-color: black;
                text-align: center;
                width: 60%;
@@ -38,3 +18,70 @@
             color: black;
            }
            
+
+h1 {
+   font-size: 40px;
+   color: black;
+   /* font-weight: 600; */
+   font-size: 75px; 
+   font-family: 'Monoton', cursive;
+}
+/* body {
+    background-color: rgb(248, 248, 175);
+} */
+
+nav {
+    background-color: rgb(0, 0, 0);
+}
+span {
+    color:black;
+    font-family: 'Arimo', sans-serif;
+    /* font-weight: bold; */
+    
+}
+
+h2 {
+   font-size: large;
+   color: black;
+   font-family: 'Arimo', sans-serif;
+   font-weight: bold;
+   
+  
+}
+.btn {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.btn:hover {
+    background-color:  rgb(248, 248, 175);
+    color: black;
+}
+.adjust {
+    text-align: right;
+}
+
+/* input[type='radio']:checked:after {
+    background-color: black;
+} */
+/* input {
+    color: black;
+} */
+/* body:before, body:after {
+    content: "";
+    position: fixed;
+    background: orange;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 20px solid orange;
+    border-right: 20px solid orange;  
+} */
