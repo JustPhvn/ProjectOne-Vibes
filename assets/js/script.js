@@ -104,3 +104,9 @@ $("#submit").on("click", function() {
     trumpQuote();
   }
 });
+
+$("#enter").on("click", function(){
+  $("#welcome").attr("style", "display:none");
+  $("#quest").attr("style", "display:block");
+  document.body.style.backgroundColor = "rgb(248, 248, 175)";
+})
