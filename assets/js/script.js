@@ -1,4 +1,5 @@
 var kanyeTrump;
+var answers = 0;
 
 function kanyeSong() {
   var albumsURL =
@@ -84,37 +85,54 @@ function giphy() {
 }
 
 $("#submit").on("click", function() {
-  // first add then if
-  var sum = 0;
+  for (let i = 0; i < 10; i++) {
+    if (document.getElementsByName("buttons")[i].checked === true) {
+      console.log(answers);
+      answers++;
+    }
+  }
+  if (answers === 5) {
+    // first add then if
+    var sum = 0;
 
-  //hide element
-  $("#quest").attr("style", "display: none");
-  $("#result").attr("style", "display: block");
+    //hide element
+    $("#quest").attr("style", "display: none");
+    $("#result").attr("style", "display: block");
 
-  $(".radio:checked").each(function() {
-    sum += +this.value;
-  });
-  console.log(sum);
-  kanyeSong();
-  if (sum > 1) {
-    // // run kanye
-    kanyeQuote();
+    $(".radio:checked").each(function() {
+      sum += +this.value;
+    });
+
+    answers = 0;
+
+    kanyeSong();
+    if (sum > 1) {
+      // // run kanye
+      kanyeQuote();
+    } else {
+      // run trump
+      trumpQuote();
+    }
   } else {
-    // run trump
-    trumpQuote();
+    answers = 0;
   }
 });
 
 $("#enter").on("click", function() {
-  $("#welcome").attr("style", "display:none");
-  $("#quest").attr("style", "display:block");
+  $("#welcome").attr("style", "display: none");
+  $("#quest").attr("style", "display: block");
   document.body.style.backgroundColor = "rgb(248, 248, 175)";
 });
 
 $("#restart").on("click", function() {
-  $("#quest").attr("style", "display: block");
-  $("#result").attr("style", "display: none");
-  for (let i = 0; i < 10; i++) {
-    document.getElementsByName("buttons")[i].checked = false;
+  // console.log($("#welcome").attr("style"));
+  if ($("#welcome").attr("style") === "display: none") {
+    $("#quest").attr("style", "display: block");
+    $("#result").attr("style", "display: none");
+    for (let i = 0; i < 10; i++) {
+      document.getElementsByName("buttons")[i].checked = false;
+    }
+  } else {
+    console.log("Hewwo");
   }
 });
