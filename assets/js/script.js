@@ -26,7 +26,7 @@ function kanyeSong() {
         data: {
           key: "AIzaSyAIh4pt2_lX-gZ0KipQ4i69duIxKGNMyaY",
           part: "snippet",
-          q: "Kanye West" + query,
+          q: "Kanye West lyrics" + query,
           type: "video",
           videoEmbeddable: true
         }
