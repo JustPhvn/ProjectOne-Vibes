@@ -1,0 +1,40 @@
+.song-title { 
+    text-align: center;
+    font-size: 30px;
+    
+    }
+    
+    .imggroup{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-right: 200px;
+        margin-left: 200px;
+    border-radius: 200px;
+    
+    }
+    
+    .quote-text{
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        margin-left: 45px;
+            }
+           .row {
+               background-color: black;
+               text-align: center;
+               width: 60%;
+               padding: 10px;
+               margin-top: 20%;
+    
+           }
+           .btn {
+               background-color: black;
+           }
+           body { 
+               background-color: black;
+           }
+           .btn:hover {
+               background-color: rgb(248, 248, 175);
+            color: black;
+           }
+           
