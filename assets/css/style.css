@@ -57,3 +57,22 @@ h2 {
 h3 {
   font-family: "Monoton", cursive;
 }
+
+.btndark {
+  color: black;
+}
+
+.btndark:hover {
+  background: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.hiddenQuote {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Monoton", cursive;
+}
