@@ -8,44 +8,6 @@
 .btn {
   background-color: black;
 }
-body {
-  background-color: black;
-}
-.btn:hover {
-  background-color: rgb(248, 248, 175);
-  color: black;
-}
-
-h1 {
-  font-size: 40px;
-  color: black;
-  /* font-weight: 600; */
-  font-size: 75px;
-  font-family: "Monoton", cursive;
-}
-/* body {
-    background-color: rgb(248, 248, 175);
-} */
-
-nav {
-  background-color: rgb(0, 0, 0);
-}
-span {
-  color: black;
-  font-family: "Arimo", sans-serif;
-  /* font-weight: bold; */
-}
-
-h2 {
-  font-size: large;
-  color: black;
-  font-family: "Arimo", sans-serif;
-  font-weight: bold;
-}
-.btn {
-  background-color: rgb(0, 0, 0);
-}
-
 .btn:hover {
   background-color: rgb(248, 248, 175);
   color: black;
@@ -53,26 +15,51 @@ h2 {
 .adjust {
   text-align: right;
 }
-
-h3 {
-  font-family: "Monoton", cursive;
-}
-
 .btndark {
   color: black;
 }
-
 .btndark:hover {
   background: white;
+}
+.btnhidden {
+  color: black;
+}
+.hiddenQuote {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Monoton", cursive;
+}
+.btnEnter {
+  color: white;
+}
+body {
+  background-color: black;
+}
+nav {
+  background-color: rgb(0, 0, 0);
+}
+span {
+  color: black;
+  font-family: "Arimo", sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: black;
+
+  font-size: 75px;
+  font-family: "Monoton", cursive;
+}
+h2 {
+  font-size: large;
+  color: black;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Monoton", cursive;
 }
 
 img {
   display: block;
   margin: auto;
-}
-
-.hiddenQuote {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Monoton", cursive;
 }
