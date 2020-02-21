@@ -127,6 +127,7 @@ $("#submit").on("click", function() {
 });
 //Enter from front page
 $("#enter").on("click", function() {
+  $("a").removeClass("btndark");
   $("#welcome").attr("style", "display: none");
   $("#quest").attr("style", "display: block");
   document.body.style.backgroundColor = "rgb(248, 248, 175)";
@@ -134,6 +135,7 @@ $("#enter").on("click", function() {
 //Reset to front page
 $("#restart").on("click", function() {
   if ($("#welcome").attr("style") === "display: none") {
+    $("a").addClass("btndark");
     document.body.style.backgroundColor = "black";
     $("#welcome").attr("style", "display: block");
     $("#quest").attr("style", "display: none");
