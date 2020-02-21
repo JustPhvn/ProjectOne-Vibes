@@ -1,26 +1,33 @@
+//init variables
 var kanyeTrump;
 var answers = 0;
 
+//How to get a Kanye song
 function kanyeSong() {
+  //URL linking to specific Kanye album search
   var albumsURL =
     "https://theaudiodb.com/api/v1/json/1/searchalbum.php?s=Kanye_West&s=Kanye_West";
 
+  //Call to get Kanye album
   $.ajax({
     url: albumsURL,
     method: "GET"
   }).then(function(album) {
+    // set ID to random album
     let albumID =
       album.album[Math.floor(Math.random() * album.album.length)].idAlbum;
     var albumInfoURL =
       "https://theaudiodb.com/api/v1/json/1/track.php?m=" + albumID;
+    //Call to get specific album data
     $.ajax({
       url: albumInfoURL,
       method: "GET"
     }).then(function(songs) {
-      // console.log(albumInfo);
+      //set query to random track in album
       let query =
         songs.track[Math.floor(Math.random() * songs.track.length)].strTrack;
       console.log(query);
+      //Call to get Youtube video for track picked
       $.ajax({
         url: "https://www.googleapis.com/youtube/v3/search",
         method: "GET",
@@ -44,30 +51,31 @@ function kanyeSong() {
   });
 }
 
+//Get a random Kanye quote
 function kanyeQuote() {
   kanyeTrump = "kanye";
   $.ajax({
     url: "https://api.kanye.rest/?format=text",
     method: "GET"
   }).then(function(quote) {
-    // console.log(quote);
     $("#quote").text(quote);
   });
   giphy();
 }
 
+//Get a random Trump quote
 function trumpQuote() {
   kanyeTrump = "donald trump";
   $.ajax({
     url: "https://www.tronalddump.io/random/quote",
     method: "GET"
   }).then(function(quote) {
-    // console.log(quote.value);
     $("#quote").text(quote.value);
   });
   giphy();
 }
 
+//Get a random Kanye/Trump gif
 function giphy() {
   var giphyKey = "M857JYpnuFQyNxgX8ZnQxOT8fQozrWua";
   var giphyURL =
@@ -80,15 +88,14 @@ function giphy() {
     method: "GET"
   }).then(function(gif) {
     $(".gif").attr("src", gif.data.image_original_url);
-    // console.log(gif.data.url);
   });
 }
 
+//Submit quiz
 $("#submit").on("click", function() {
   $(window).scrollTop(0);
   for (let i = 0; i < 10; i++) {
     if (document.getElementsByName("buttons")[i].checked === true) {
-      console.log(answers);
       answers++;
     }
   }
@@ -118,15 +125,14 @@ $("#submit").on("click", function() {
     answers = 0;
   }
 });
-
+//Enter from front page
 $("#enter").on("click", function() {
   $("#welcome").attr("style", "display: none");
   $("#quest").attr("style", "display: block");
   document.body.style.backgroundColor = "rgb(248, 248, 175)";
 });
-
+//Reset to front page
 $("#restart").on("click", function() {
-  // console.log($("#welcome").attr("style"));
   if ($("#welcome").attr("style") === "display: none") {
     document.body.style.backgroundColor = "black";
     $("#welcome").attr("style", "display: block");
