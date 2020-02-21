@@ -138,10 +138,19 @@ $("#restart").on("click", function() {
     $("#welcome").attr("style", "display: block");
     $("#quest").attr("style", "display: none");
     $("#result").attr("style", "display: none");
+    $("#hidden").attr("style", "display: none");
     for (let i = 0; i < 10; i++) {
       document.getElementsByName("buttons")[i].checked = false;
     }
   } else {
     console.log("Hewwo");
   }
+});
+
+$("#easter").on("click", function() {
+  document.body.style.backgroundColor = "rgb(248, 248, 175)";
+  $("#welcome").attr("style", "display: none");
+  $("#quest").attr("style", "display: none");
+  $("#result").attr("style", "display: none");
+  $("#hidden").attr("style", "display: block");
 });
