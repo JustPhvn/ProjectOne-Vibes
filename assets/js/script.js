@@ -136,6 +136,7 @@ $("#enter").on("click", function() {
 $("#restart").on("click", function() {
   if ($("#welcome").attr("style") === "display: none") {
     $("#video").attr("src", " ");
+    $("#secret").attr("src", "https://www.youtube.com/embed/MKM90u7pf3U");
     $("a").addClass("btndark");
     document.body.style.backgroundColor = "black";
     $("#welcome").attr("style", "display: block");
