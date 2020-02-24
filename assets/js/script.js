@@ -135,6 +135,7 @@ $("#enter").on("click", function() {
 //Reset to front page
 $("#restart").on("click", function() {
   if ($("#welcome").attr("style") === "display: none") {
+    $("#video").attr("src", " ");
     $("a").addClass("btndark");
     document.body.style.backgroundColor = "black";
     $("#welcome").attr("style", "display: block");
